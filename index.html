@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <section id = "app">
+    <section id = "crud_form">
+      <form class ="form form--create_account">
+        <h2>Create Account</h2>
+        <div>
+          <label for = "create_account__username">Username:</label>
+          <input class = "username create_account__username" type="text"  placeholder="Enter username..." required>
+        </div>
+        <div>
+          <label for = "create_account__password">Password:</label>
+          <input class = "password create_account__password" type="password"  placeholder="Enter password..." required>
+        </div>
+        <div>
+          <label for = "create_account__name">Name:</label>
+          <input class = "name create_account__name" type ="text"  placeholder="Enter name..." required>
+        </div>
+        <div>
+          <label for = "create_account__email">Email:</label>
+          <input class = "email create_account__email" type ="text"  placeholder="Enter email..." required>
+        </div>
+        <button class = "btn create_account__btn">Sign Up</button>
+      </form>
+      <form class ="form form--login">
+        <h2>Login</h2>
+        <div>
+          <label for = "login__username">Username:</label>
+          <input class = "username login__username" type="text" placeholder="Enter username..." required>
+        </div>
+        <div>
+          <label for = "login__password">Password:</label>
+          <input class = "password login__password" type="password" placeholder="Enter password..." required>
+        </div>
+        <button class = "btn login__btn" >Login</button>
+      </form>
+      <form class ="form form--change_password">
+        <h2>Update Password</h2>
+        <div>
+          <label for = "change_password__username">Username:</label>
+          <input class = "username change_password__username" type="text" placeholder="Enter username..." required>
+        </div>
+        <div>
+          <label for = "change_password__password">New Password:</label>
+          <input class = "password change_password__password" type="password" placeholder="Enter new password..." required>
+          <input class = "password change_password__confirm_password" placeholder="confirm new password..."type="password" required>
+        </div>
+        <button class = "btn change_passsword__btn">Change Password</button>
+      </form>
+      <form class ="form form--delete_account">
+        <h2>Delete Account</h2>
+        <div>
+          <label for = "delete__account">Username:</label>
+          <input class = "delete__account" type="text" placeholder="Enter username..." required>
+        </div>
+        <button class = "btn delete__btn">Delete Account</button>
+      </form>
+    </section>
+    <section id = "display">
+      <h1>Frontend Response</h1>
+      <div id = "frontend_response"></div>
+      <h1>Server Response</h1>
+      <div id = "server_response"></div>
+    </section>
+</section>
+</body>
+<script src = './index.js'></script>
+</html>
